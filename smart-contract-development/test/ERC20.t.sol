@@ -22,15 +22,15 @@ contract ERC20Test is Test {
         token = new ERC20("Test token", "TST");
     }
 
-    function testName() public {
+    function testName() public view {
         assertEq(token.name(), "Test token");
     }
 
-    function testSymbol() public {
+    function testSymbol() public view {
         assertEq(token.symbol(), "TST");
     }
 
-    function testDecimals() public {
+    function testDecimals() public view {
         assertEq(token.decimals(), 18);
     }
 
